@@ -1,0 +1,112 @@
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "riska febriani",
+    "email": "riska@gmail.com",
+    "password":"123456",
+    "confPassword":"123456",
+    "role":"user"
+} 
+
+###
+//get SEMUA DATA Users
+GET http://localhost:5000/users
+
+
+###
+
+//GET SATU DATA USER
+GET  http://localhost:5000/users/0bac129c-897b-43fb-ada3-c8e8473df796
+
+
+
+//UPDATE DATA USERS
+###
+PATCH  http://localhost:5000/users/0bac129c-897b-43fb-ada3-c8e8473df796
+Content-Type: application/json
+
+{
+    "name": "Wahyu GANTENG123",
+    "email": "admin@gmail.com",
+    "password":"",
+    "confPassword":"",
+    "role":"Users"
+} 
+
+
+///HAPUS DATA USERS
+
+### 
+
+DELETE  http://localhost:5000/users/44548495-574e-4c04-9bda-b8b5cf3e948d
+
+
+
+// UNTUK LOGIN  ADMIN
+### 
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "wahyuhidayat@gmail.com",
+    "password":"1234567890"
+    
+} 
+
+
+
+// UNTUK LOGIN  USER
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "wahyuuser@gmail.com",
+    "password":"123456"
+    
+} 
+
+
+///UNTUK MENENGOK SIAPA YANG LOGIN USER/ADMIN
+###
+GET http://localhost:5000/me
+
+
+///UNTUK LOGOUT
+###
+DELETE  http://localhost:5000/Logout
+
+
+
+
+//get SEMUA DATA PRODUCTS
+###
+GET http://localhost:5000/product
+
+
+
+//POST DATA PRODUCTS
+###
+POST http://localhost:5000/product
+Content-Type: application/json
+
+{
+    "name": "WAHYU HXIDaYAT",
+    "price":122
+} 
+
+
+
+//UPDATE DATA  PRODUCTS
+###
+PATCH  http://localhost:5000/users/0bac129c-897b-43fb-ada3-c8e8473df796
+Content-Type: application/json
+
+{
+    "name": "Wahyu GANTENG123",
+    "email": "admin@gmail.com",
+    "password":"",
+    "confPassword":"",
+    "role":"Users"
+} 
